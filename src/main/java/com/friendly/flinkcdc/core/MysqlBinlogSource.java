@@ -8,7 +8,7 @@ import com.ververica.cdc.connectors.mysql.source.MySqlSource;
 public class MysqlBinlogSource {
 
     public static void main(String[] args) throws Exception {
-        int port = 9099;
+        int port = 3306;
         MySqlSource<String> mySqlSource = MySqlSource.<String>builder()
                 .hostname("localhost")
                 .port(port)
